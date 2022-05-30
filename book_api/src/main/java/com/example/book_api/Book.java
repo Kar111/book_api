@@ -1,5 +1,8 @@
 package com.example.book_api;
 
+import lombok.Data;
+
+@Data
 public class Book {
     String title;
     String author;

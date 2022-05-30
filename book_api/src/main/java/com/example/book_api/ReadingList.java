@@ -14,7 +14,7 @@ public class ReadingList {
             this.rating = rating;
         }
     }
-    private ArrayList<BookItem> bookItems = new ArrayList<>();
+    private static ArrayList<BookItem> bookItems = new ArrayList<>();
     public ReadingList() {}
 
     public List<Book> getBooks() {

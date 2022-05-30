@@ -14,7 +14,7 @@ class BookApiApplicationTests {
     void contextLoads() {
     }
     @Test
-    public void onFirstCallBookListShoulBeEmpty()
+    public void onFirstCallBookListShouldBeEmpty()
     {
         //SETUP
         ReadingList cut = new ReadingList();
