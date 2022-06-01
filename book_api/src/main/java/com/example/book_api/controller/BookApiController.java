@@ -16,6 +16,10 @@ public class BookApiController {
         this.bookApiService = bookApiService;
     }
 
+    @GetMapping()
+    public String healthcheck() {
+        return "Book Api is up and running!!!";
+    }
     @PostMapping(path = "/{name}/{author}/{year}/{length}/{dateRead}/{rating}/")
     public Book saveNewBooks(@PathVariable String name,
                              @PathVariable String author,
@@ -26,7 +30,7 @@ public class BookApiController {
         return bookApiService.save(name, author, year, length, dateRead, rating);
     }
 
-    @GetMapping()
+    @GetMapping(path = "/getBooks/")
     public List<Book> getBooks() {
         return bookApiService.getBooks();
     }
